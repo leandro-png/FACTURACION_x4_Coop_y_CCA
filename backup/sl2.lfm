@@ -1,0 +1,734 @@
+object xls: Txls
+  Left = 178
+  Height = 686
+  Top = 67
+  Width = 1208
+  Anchors = []
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsToolWindow
+  Caption = 'Facturación Cooperativas    <Versión 25/11/2020>'
+  ClientHeight = 686
+  ClientWidth = 1208
+  Color = clSkyBlue
+  DesignTimePPI = 120
+  OnCreate = FormCreate
+  ParentBiDiMode = False
+  Position = poScreenCenter
+  UseDockManager = True
+  LCLVersion = '2.0.10.0'
+  object boton_archivo_1: TButton
+    Left = 10
+    Height = 30
+    Top = 390
+    Width = 292
+    Caption = 'ABRIR  XLS...'
+    Font.Height = -10
+    Font.Name = 'Sans'
+    OnClick = boton_archivo_1Click
+    ParentFont = False
+    TabOrder = 0
+  end
+  object grilla1: TStringGrid
+    Left = 12
+    Height = 328
+    Top = 44
+    Width = 290
+    AutoFillColumns = True
+    ColCount = 6
+    FixedCols = 0
+    Font.Height = -14
+    Font.Name = 'Sans'
+    ParentFont = False
+    RowCount = 200000
+    TabOrder = 1
+    ColWidths = (
+      44
+      44
+      44
+      44
+      44
+      45
+    )
+  end
+  object grilla2: TStringGrid
+    Left = 12
+    Height = 328
+    Top = 44
+    Width = 290
+    AutoFillColumns = True
+    ColCount = 6
+    FixedCols = 0
+    Font.Height = -10
+    Font.Name = 'Sans'
+    ParentFont = False
+    RowCount = 200000
+    TabOrder = 2
+    ColWidths = (
+      44
+      44
+      44
+      44
+      44
+      45
+    )
+  end
+  object Label2: TLabel
+    Left = 10
+    Height = 16
+    Top = 20
+    Width = 51
+    Caption = 'Archivo:'
+    Font.Height = -14
+    Font.Name = 'Sans'
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 12
+    Height = 16
+    Top = 380
+    Width = 72
+    Caption = 'TERMINAL:'
+    Font.Height = -14
+    Font.Name = 'Sans'
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label4: TLabel
+    Left = 12
+    Height = 16
+    Top = 400
+    Width = 74
+    Caption = 'DOMICILIO:'
+    Font.Height = -14
+    Font.Name = 'Sans'
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label5: TLabel
+    Left = 12
+    Height = 16
+    Top = 420
+    Width = 68
+    Caption = 'SERVICIO:'
+    Font.Height = -14
+    Font.Name = 'Sans'
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label6: TLabel
+    Left = 12
+    Height = 16
+    Top = 440
+    Width = 61
+    Caption = 'TITULAR:'
+    Font.Height = -14
+    Font.Name = 'Sans'
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label7: TLabel
+    Left = 12
+    Height = 16
+    Top = 460
+    Width = 67
+    Caption = 'PERIODO:'
+    Font.Height = -14
+    Font.Name = 'Sans'
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label8: TLabel
+    Left = 10
+    Height = 16
+    Top = 0
+    Width = 43
+    Caption = 'Label8'
+    Font.Height = -14
+    Font.Name = 'Sans'
+    ParentColor = False
+    ParentFont = False
+  end
+  object Button2: TButton
+    Left = 10
+    Height = 31
+    Top = 576
+    Width = 94
+    Caption = 'LIMPIAR'
+    Color = clRed
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clRed
+    Font.Height = -16
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = Button2Click
+    ParentFont = False
+    TabOrder = 3
+  end
+  object grilla3: TStringGrid
+    Left = 310
+    Height = 328
+    Top = 44
+    Width = 290
+    AutoFillColumns = True
+    ColCount = 6
+    FixedCols = 0
+    Font.Height = -14
+    Font.Name = 'Sans'
+    ParentFont = False
+    RowCount = 200000
+    TabOrder = 4
+    ColWidths = (
+      44
+      44
+      44
+      44
+      44
+      45
+    )
+  end
+  object grilla4: TStringGrid
+    Left = 310
+    Height = 328
+    Top = 44
+    Width = 290
+    AutoFillColumns = True
+    ColCount = 6
+    FixedCols = 0
+    Font.Height = -10
+    Font.Name = 'Sans'
+    ParentFont = False
+    RowCount = 200000
+    TabOrder = 5
+    ColWidths = (
+      44
+      44
+      44
+      44
+      44
+      45
+    )
+  end
+  object boton_archivo_2: TButton
+    Left = 310
+    Height = 30
+    Top = 390
+    Width = 290
+    Caption = 'ABRIR  XLS...'
+    Font.Height = -10
+    Font.Name = 'Sans'
+    OnClick = boton_archivo_2Click
+    ParentFont = False
+    TabOrder = 6
+  end
+  object Label9: TLabel
+    Left = 320
+    Height = 16
+    Top = 380
+    Width = 72
+    Caption = 'TERMINAL:'
+    Font.Height = -14
+    Font.Name = 'Sans'
+    ParentColor = False
+    ParentFont = False
+    OnClick = Label9Click
+  end
+  object Label10: TLabel
+    Left = 320
+    Height = 16
+    Top = 400
+    Width = 74
+    Caption = 'DOMICILIO:'
+    Font.Height = -14
+    Font.Name = 'Sans'
+    ParentColor = False
+    ParentFont = False
+    OnClick = Label10Click
+  end
+  object Label11: TLabel
+    Left = 320
+    Height = 16
+    Top = 420
+    Width = 68
+    Caption = 'SERVICIO:'
+    Font.Height = -14
+    Font.Name = 'Sans'
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label12: TLabel
+    Left = 320
+    Height = 16
+    Top = 440
+    Width = 61
+    Caption = 'TITULAR:'
+    Font.Height = -14
+    Font.Name = 'Sans'
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label13: TLabel
+    Left = 320
+    Height = 16
+    Top = 460
+    Width = 67
+    Caption = 'PERIODO:'
+    Font.Height = -14
+    Font.Name = 'Sans'
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label14: TLabel
+    Left = 310
+    Height = 16
+    Top = 0
+    Width = 51
+    Caption = 'Label14'
+    Font.Height = -14
+    Font.Name = 'Sans'
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label15: TLabel
+    Left = 310
+    Height = 16
+    Top = 20
+    Width = 51
+    Caption = 'Archivo:'
+    Font.Height = -14
+    Font.Name = 'Sans'
+    ParentColor = False
+    ParentFont = False
+  end
+  object Button1: TButton
+    Left = 10
+    Height = 31
+    Top = 536
+    Width = 94
+    Caption = 'Calcular'
+    OnClick = Button1Click
+    ParentFont = False
+    TabOrder = 7
+  end
+  object grilla5: TStringGrid
+    Left = 610
+    Height = 200
+    Top = 706
+    Width = 640
+    AutoFillColumns = True
+    ColCount = 12
+    FixedCols = 0
+    Font.Height = -10
+    Font.Name = 'Sans'
+    ParentFont = False
+    RowCount = 200000
+    TabOrder = 8
+    ColWidths = (
+      51
+      51
+      51
+      51
+      51
+      51
+      51
+      51
+      51
+      51
+      51
+      54
+    )
+  end
+  object Edit1: TEdit
+    Left = 970
+    Height = 28
+    Top = 700
+    Width = 35
+    OnChange = Edit1Change
+    ParentFont = False
+    TabOrder = 9
+  end
+  object Label16: TLabel
+    Left = 930
+    Height = 20
+    Top = 706
+    Width = 29
+    Caption = 'Dias'
+    ParentColor = False
+    ParentFont = False
+  end
+  object StringGrid1: TStringGrid
+    Left = 330
+    Height = 200
+    Top = 480
+    Width = 440
+    AutoEdit = False
+    Color = clSkyBlue
+    ColCount = 3
+    DoubleBuffered = False
+    FixedCols = 0
+    FixedRows = 0
+    Font.Height = -10
+    Font.Name = 'Sans'
+    Options = [goRangeSelect, goSmoothScroll]
+    ParentDoubleBuffered = False
+    ParentFont = False
+    RowCount = 8
+    TabOrder = 10
+    ColWidths = (
+      45
+      76
+      311
+    )
+    Cells = (
+      16
+      0
+      0
+      '04'
+      0
+      1
+      '05A'
+      0
+      2
+      '06A'
+      0
+      3
+      '09B'
+      0
+      4
+      '10B'
+      0
+      5
+      '13C'
+      0
+      6
+      '14C'
+      0
+      7
+      '16'
+      2
+      0
+      'kWh total ENERGÍA ACTIVA (PICO + RESTO + VALLE )'
+      2
+      1
+      'kWh energía en período VALLE (23 a 5 Hs.)'
+      2
+      2
+      'kW (demanda) indicativa en período VALLE'
+      2
+      3
+      'kWh energía en período RESTO ( 5 a 18 Hs.)'
+      2
+      4
+      'kW (demanda) indicativa en período RESTO'
+      2
+      5
+      'kWh energía en período PICO (18 a 23 Hs.)'
+      2
+      6
+      'kW (demanda) indicativa en período PICO'
+      2
+      7
+      'kVArh Energía REACTIVA total'
+    )
+  end
+  object Button3: TButton
+    Left = 12
+    Height = 31
+    Top = 649
+    Width = 94
+    Caption = 'Copiar'
+    OnClick = Button3Click
+    ParentFont = False
+    TabOrder = 11
+  end
+  object grilla6: TStringGrid
+    Left = 610
+    Height = 328
+    Top = 44
+    Width = 290
+    AutoFillColumns = True
+    ColCount = 6
+    FixedCols = 0
+    Font.Height = -14
+    Font.Name = 'Sans'
+    ParentFont = False
+    RowCount = 200000
+    TabOrder = 12
+    ColWidths = (
+      44
+      44
+      44
+      44
+      44
+      45
+    )
+  end
+  object grilla7: TStringGrid
+    Left = 610
+    Height = 328
+    Top = 44
+    Width = 290
+    AutoFillColumns = True
+    ColCount = 6
+    FixedCols = 0
+    Font.Height = -10
+    Font.Name = 'Sans'
+    ParentFont = False
+    RowCount = 200000
+    TabOrder = 13
+    ColWidths = (
+      44
+      44
+      44
+      44
+      44
+      45
+    )
+  end
+  object Label17: TLabel
+    Left = 620
+    Height = 16
+    Top = 380
+    Width = 72
+    Caption = 'TERMINAL:'
+    Font.Height = -14
+    Font.Name = 'Sans'
+    ParentColor = False
+    ParentFont = False
+    OnClick = Label9Click
+  end
+  object Label18: TLabel
+    Left = 620
+    Height = 16
+    Top = 400
+    Width = 74
+    Caption = 'DOMICILIO:'
+    Font.Height = -14
+    Font.Name = 'Sans'
+    ParentColor = False
+    ParentFont = False
+    OnClick = Label10Click
+  end
+  object Label19: TLabel
+    Left = 620
+    Height = 16
+    Top = 420
+    Width = 68
+    Caption = 'SERVICIO:'
+    Font.Height = -14
+    Font.Name = 'Sans'
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label20: TLabel
+    Left = 620
+    Height = 16
+    Top = 440
+    Width = 61
+    Caption = 'TITULAR:'
+    Font.Height = -14
+    Font.Name = 'Sans'
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label21: TLabel
+    Left = 620
+    Height = 16
+    Top = 460
+    Width = 67
+    Caption = 'PERIODO:'
+    Font.Height = -14
+    Font.Name = 'Sans'
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label22: TLabel
+    Left = 610
+    Height = 16
+    Top = 0
+    Width = 51
+    Caption = 'Label22'
+    Font.Height = -14
+    Font.Name = 'Sans'
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label23: TLabel
+    Left = 610
+    Height = 16
+    Top = 20
+    Width = 51
+    Caption = 'Archivo:'
+    Font.Height = -14
+    Font.Name = 'Sans'
+    ParentColor = False
+    ParentFont = False
+  end
+  object Button4: TButton
+    Left = 610
+    Height = 30
+    Top = 390
+    Width = 290
+    Caption = 'ABRIR  XLS...'
+    Font.Height = -10
+    Font.Name = 'Sans'
+    OnClick = Button4Click
+    ParentFont = False
+    TabOrder = 14
+  end
+  object Button5: TButton
+    Left = 910
+    Height = 30
+    Top = 390
+    Width = 290
+    Caption = 'ABRIR  XLS...'
+    Font.Height = -10
+    Font.Name = 'Sans'
+    OnClick = Button5Click
+    ParentFont = False
+    TabOrder = 15
+  end
+  object grilla8: TStringGrid
+    Left = 910
+    Height = 328
+    Top = 44
+    Width = 290
+    AutoFillColumns = True
+    ColCount = 6
+    FixedCols = 0
+    Font.Height = -14
+    Font.Name = 'Sans'
+    ParentFont = False
+    RowCount = 200000
+    TabOrder = 16
+    ColWidths = (
+      44
+      44
+      44
+      44
+      44
+      45
+    )
+  end
+  object grilla9: TStringGrid
+    Left = 910
+    Height = 328
+    Top = 44
+    Width = 290
+    AutoFillColumns = True
+    ColCount = 6
+    FixedCols = 0
+    Font.Height = -10
+    Font.Name = 'Sans'
+    ParentFont = False
+    RowCount = 200000
+    TabOrder = 17
+    ColWidths = (
+      44
+      44
+      44
+      44
+      44
+      45
+    )
+  end
+  object Label24: TLabel
+    Left = 920
+    Height = 16
+    Top = 380
+    Width = 72
+    Caption = 'TERMINAL:'
+    Font.Height = -14
+    Font.Name = 'Sans'
+    ParentColor = False
+    ParentFont = False
+    OnClick = Label9Click
+  end
+  object Label25: TLabel
+    Left = 920
+    Height = 16
+    Top = 400
+    Width = 74
+    Caption = 'DOMICILIO:'
+    Font.Height = -14
+    Font.Name = 'Sans'
+    ParentColor = False
+    ParentFont = False
+    OnClick = Label10Click
+  end
+  object Label26: TLabel
+    Left = 920
+    Height = 16
+    Top = 420
+    Width = 68
+    Caption = 'SERVICIO:'
+    Font.Height = -14
+    Font.Name = 'Sans'
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label27: TLabel
+    Left = 920
+    Height = 16
+    Top = 440
+    Width = 61
+    Caption = 'TITULAR:'
+    Font.Height = -14
+    Font.Name = 'Sans'
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label28: TLabel
+    Left = 920
+    Height = 16
+    Top = 460
+    Width = 67
+    Caption = 'PERIODO:'
+    Font.Height = -14
+    Font.Name = 'Sans'
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label29: TLabel
+    Left = 910
+    Height = 16
+    Top = 0
+    Width = 51
+    Caption = 'Label29'
+    Font.Height = -14
+    Font.Name = 'Sans'
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label30: TLabel
+    Left = 910
+    Height = 16
+    Top = 20
+    Width = 51
+    Caption = 'Archivo:'
+    Font.Height = -14
+    Font.Name = 'Sans'
+    ParentColor = False
+    ParentFont = False
+  end
+  object Button6: TButton
+    Left = 35
+    Height = 31
+    Top = 488
+    Width = 49
+    Caption = 'CCA'
+    OnClick = Button6Click
+    TabOrder = 18
+  end
+  object OpenDialog1: TOpenDialog
+    Filter = '*.xls*|*.xls*'
+    Left = 100
+    Top = 270
+  end
+  object ApplicationProperties1: TApplicationProperties
+    Left = 70
+    Top = 180
+  end
+end

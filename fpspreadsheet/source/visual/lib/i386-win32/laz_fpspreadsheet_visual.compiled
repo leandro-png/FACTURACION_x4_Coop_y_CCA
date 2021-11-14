@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Compiler Value="C:\lazarus\fpc\3.2.0\bin\i386-win32\fpc.exe" Date="1357350198"/>
+  <Params Value=" -MObjFPC -Scghi -O1 -g -gl -l -vewnhibq &quot;-FiC:\Users\eadl\Desktop\06.99.97 DISCAR (agrega periodos faltantes)\fpspreadsheet\source&quot; &quot;-FuC:\Users\eadl\Desktop\06.99.97 DISCAR (agrega periodos faltantes)\fpspreadsheet\source\visual&quot; -FuC:\lazarus\packager\units\i386-win32 -FuC:\lazarus\components\lazutils\lib\i386-win32 &quot;-FuC:\Users\eadl\Desktop\06.99.97 DISCAR (agrega periodos faltantes)\fpspreadsheet\source\common\lib\i386-win32&quot; -FuC:\lazarus\lcl\units\i386-win32 -FuC:\lazarus\lcl\units\i386-win32\win32 -FuC:\lazarus\components\lazcontrols\lib\i386-win32\win32 -FuC:\lazarus\components\ideintf\units\i386-win32\win32 -FuC:\lazarus\components\tachart\lib\i386-win32\win32 &quot;-FuC:\Users\eadl\Desktop\06.99.97 DISCAR (agrega periodos faltantes)\fpspreadsheet\&quot; &quot;-FUC:\Users\eadl\Desktop\06.99.97 DISCAR (agrega periodos faltantes)\fpspreadsheet\source\visual\lib\i386-win32\&quot; -dLCL -dLCLwin32 laz_fpspreadsheet_visual.pas"/>
+</CONFIG>

@@ -1,0 +1,157 @@
+object xls: Txls
+  Left = 476
+  Height = 46
+  Top = 163
+  Width = 400
+  Anchors = []
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsToolWindow
+  Caption = 'Registros DISCAR (02) x Leandro'
+  ClientHeight = 46
+  ClientWidth = 400
+  OnCreate = FormCreate
+  ParentBiDiMode = False
+  Position = poScreenCenter
+  UseDockManager = True
+  LCLVersion = '1.6.4.0'
+  object boton_archivo_1: TButton
+    Left = 8
+    Height = 32
+    Top = 8
+    Width = 384
+    Caption = 'Abrir...'
+    OnClick = boton_archivo_1Click
+    TabOrder = 0
+  end
+  object grilla1: TStringGrid
+    Left = 8
+    Height = 344
+    Top = 72
+    Width = 384
+    AutoFillColumns = True
+    ColCount = 6
+    FixedCols = 0
+    RowCount = 200000
+    TabOrder = 1
+    ColWidths = (
+      60
+      60
+      60
+      60
+      60
+      63
+    )
+  end
+  object grilla2: TStringGrid
+    Left = 8
+    Height = 344
+    Top = 72
+    Width = 384
+    AutoFillColumns = True
+    ColCount = 6
+    FixedCols = 0
+    RowCount = 200000
+    TabOrder = 2
+    ColWidths = (
+      60
+      60
+      60
+      60
+      60
+      63
+    )
+  end
+  object Label1: TLabel
+    Left = 168
+    Height = 13
+    Top = 176
+    Width = 31
+    Caption = 'Label1'
+    ParentColor = False
+    OnClick = Label1Click
+  end
+  object Label2: TLabel
+    Left = 16
+    Height = 13
+    Top = 48
+    Width = 40
+    Caption = 'Archivo:'
+    ParentColor = False
+  end
+  object Button1: TButton
+    Left = 32
+    Height = 36
+    Top = 520
+    Width = 330
+    Caption = 'COPIAR A PORTAPAPELES'
+    Color = clRed
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clRed
+    Font.Height = -13
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = Button1Click
+    ParentFont = False
+    TabOrder = 3
+    Visible = False
+  end
+  object Label3: TLabel
+    Left = 32
+    Height = 13
+    Top = 432
+    Width = 54
+    Caption = 'TERMINAL:'
+    ParentColor = False
+  end
+  object Label4: TLabel
+    Left = 32
+    Height = 13
+    Top = 448
+    Width = 59
+    Caption = 'DOMICILIO:'
+    ParentColor = False
+  end
+  object Label5: TLabel
+    Left = 32
+    Height = 13
+    Top = 464
+    Width = 52
+    Caption = 'SERVICIO:'
+    ParentColor = False
+  end
+  object Label6: TLabel
+    Left = 32
+    Height = 13
+    Top = 480
+    Width = 46
+    Caption = 'TITULAR:'
+    ParentColor = False
+  end
+  object Label7: TLabel
+    Left = 32
+    Height = 13
+    Top = 496
+    Width = 50
+    Caption = 'PERIODO:'
+    ParentColor = False
+  end
+  object Label8: TLabel
+    Left = 24
+    Height = 13
+    Top = 16
+    Width = 31
+    Caption = 'Label8'
+    ParentColor = False
+  end
+  object OpenDialog1: TOpenDialog
+    Filter = '*.xls*|*.xls*'
+    left = 120
+    top = 221
+  end
+  object ApplicationProperties1: TApplicationProperties
+    left = 57
+    top = 221
+  end
+end

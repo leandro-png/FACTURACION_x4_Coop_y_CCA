@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Compiler Value="C:\lazarus\fpc\3.2.0\bin\i386-win32\fpc.exe" Date="1357350198"/>
+  <Params Value=" -MObjFPC -Scgi -O1 -g -gl -l -vewnhibq -vm5028,4055,2005 &quot;-FiC:\Users\eadl\Desktop\06.99.97 DISCAR (agrega periodos faltantes)\fpspreadsheet\source&quot; &quot;-FuC:\Users\eadl\Desktop\06.99.97 DISCAR (agrega periodos faltantes)\fpspreadsheet\source\common&quot; -FuC:\lazarus\packager\units\i386-win32 -FuC:\lazarus\components\lazutils\lib\i386-win32 &quot;-FuC:\Users\eadl\Desktop\06.99.97 DISCAR (agrega periodos faltantes)\fpspreadsheet\&quot; &quot;-FUC:\Users\eadl\Desktop\06.99.97 DISCAR (agrega periodos faltantes)\fpspreadsheet\source\common\lib\i386-win32\&quot; -dDisableWrapperFunctions laz_fpspreadsheet.pas"/>
+</CONFIG>
